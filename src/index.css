@@ -12,7 +12,7 @@
 }
 
 :root {
-  --background-color: #0a1929;
+  --background-color: #060306;
 }
 
 body {
@@ -22,51 +22,58 @@ body {
 
 @layer components {
   .btn-header {
-    @apply text-3xl cursor-pointer rounded-full hover:bg-[#007fff] active:bg-[#0059b2] p-1;
+    @apply text-3xl cursor-pointer rounded-full hover:bg-[#d000ff] active:bg-[#b200a6] p-1;
   }
 
   .video-btn {
-    @apply flex items-center justify-center px-2 md:px-4 h-[30px] md:h-[40px] cursor-pointer rounded-3xl bg-gray-200/[0.2] hover:bg-[#007fff];
+    @apply flex items-center justify-center px-2 md:px-4 h-[30px] md:h-[40px] cursor-pointer rounded-3xl bg-gray-200/[0.2] hover:bg-[#e600ff];
   }
 }
 
 .load-bar {
-    background-color: #fdba2c;
+  background-color: #fdba2c;
 }
+
 .bar {
-    content: "";
-    display: inline;
-    position: absolute;
-    width: 0;
-    height: 100%;
-    left: 50%;
-    text-align: center;
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center;
 }
+
 .bar:nth-child(1) {
-    background-color: #da4733;
-    animation: loading 3s linear infinite;
+  background-color: #da4733;
+  animation: loading 3s linear infinite;
 }
+
 .bar:nth-child(2) {
-    background-color: #3b78e7;
-    animation: loading 3s linear 1s infinite;
+  background-color: #3b78e7;
+  animation: loading 3s linear 1s infinite;
 }
+
 .bar:nth-child(3) {
-    background-color: #fdba2c;
-    animation: loading 3s linear 2s infinite;
+  background-color: #fdba2c;
+  animation: loading 3s linear 2s infinite;
 }
+
 @keyframes loading {
-    from {
-        left: 50%;
-        width: 0;
-        z-index: 100;
-    }
-    33.3333% {
-        left: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    to {
-        left: 0;
-        width: 100%;
-    }
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100;
+  }
+
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  to {
+    left: 0;
+    width: 100%;
+  }
 }

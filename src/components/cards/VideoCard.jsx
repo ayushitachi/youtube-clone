@@ -6,7 +6,7 @@ import { abbreviateNumber } from "js-abbreviation-number";
 export default function VideoCard({ videoDetails }) {
     return (
         <Link to={`/video/${videoDetails?.video?.videoId}`}>
-            <div className='flex flex-col cursor-pointer hover:bg-[#007fff]/[0.2] transition-all transform-cpu rounded-xl p-2'>
+            <div className='flex flex-col cursor-pointer hover:bg-[#ff00ff]/[0.2] transition-all transform-cpu rounded-xl p-2'>
                 <div className='relative w-full h-full'>
                     <img src={videoDetails?.video?.thumbnails[0]?.url} alt="Tumbnail" className='object-cover w-full rounded-xl' />
                 </div>

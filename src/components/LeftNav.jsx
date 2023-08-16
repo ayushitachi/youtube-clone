@@ -13,7 +13,7 @@ export default function LeftNav() {
 
                 return (
                     <>
-                        <LeftNavCards key={item.name} className={item.name == catagory ? "bg-[#0059b2]" : ""} name={item.type == 'home' ? "New" : item.name} Icon={item.icon} type={item.type} />
+                        <LeftNavCards key={item.name} className={item.name == catagory ? "bg-[#9100b2]" : ""} name={item.type == 'home' ? "New" : item.name} Icon={item.icon} type={item.type} />
                         {item?.divider && (<hr key={item.type} className='w-[90%] m-auto '></hr>)}
                     </>
                 )

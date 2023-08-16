@@ -7,7 +7,7 @@ import { GoVerified } from 'react-icons/go'
 export default function RelatedVideoCard({ videoDetails }) {
     return (
         <Link to={`/video/${videoDetails?.video?.videoId}`}>
-            <div className='flex h-28 cursor-pointer hover:bg-[#007fff]/[0.2] transition-all transform-cpu rounded-xl p-2'>
+            <div className='flex h-28 cursor-pointer hover:bg-[#ff00fb]/[0.2] transition-all transform-cpu rounded-xl p-2'>
                 <img src={videoDetails?.video?.thumbnails[0]?.url} alt="Tumbnail" className=' basis-[25%] object-cover rounded-xl' />
 
                 <div className='flex pl-1 gap-2 basis-[75%]'>

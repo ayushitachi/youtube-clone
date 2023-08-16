@@ -32,11 +32,11 @@ export default function Header() {
     }
 
     return (
-        <div className="sticky top-0 pt-2 pb-1 px-2 md:px-4  z-10 bg-[#0a1929]">
+        <div className="sticky top-0 pt-2 pb-1 px-2 md:px-4  z-10 bg-[#000000]">
             {loading && <Loader />}
             <div className='flex items-center justify-between h-7 md:h-10 '>
                 <div className='flex items-center justify-center'>
-                    <div className="flex md:hidden cursor-pointer rounded-full hover:bg-[#007fff] active:bg-[#0059b2] p-1" onClick={toggleMenu}>
+                    <div className="flex md:hidden cursor-pointer rounded-full hover:bg-[#ff00f7] active:bg-[#b20097] p-1" onClick={toggleMenu}>
                         {menuToggle ? (
                             <AiOutlineClose className='text-xl' />
                         ) : (
@@ -49,7 +49,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className='group flex items-center w-64 md:w-[420px] '>
-                    <div className=' flex items-center flex-grow pl-2 py-1 md:py-2 rounded-l-3xl border-[0.2px] border-gray-100/[0.2] cursor-pointer focus-within:border-sky-300'>
+                    <div className=' flex items-center flex-grow pl-2 py-1 md:py-2 rounded-l-3xl border-[0.2px] border-gray-100/[0.2] cursor-pointer focus-within:border-pink-300'>
                         <div className=' hidden group-focus-within:block'>
                             <TfiSearch className='text-xl p-1 md:p-[1.9px] ' />
                         </div>
